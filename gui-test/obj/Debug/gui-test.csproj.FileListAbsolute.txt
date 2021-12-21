@@ -1,0 +1,7 @@
+C:\Users\hummusbird\source\repos\gui-test\gui-test\obj\Debug\gui-test.csprojAssemblyReference.cache
+C:\Users\hummusbird\source\repos\gui-test\gui-test\obj\Debug\gui-test.csproj.CoreCompileInputs.cache
+C:\Users\hummusbird\source\repos\gui-test\gui-test\bin\Debug\gui-test.exe.config
+C:\Users\hummusbird\source\repos\gui-test\gui-test\bin\Debug\gui-test.exe
+C:\Users\hummusbird\source\repos\gui-test\gui-test\bin\Debug\gui-test.pdb
+C:\Users\hummusbird\source\repos\gui-test\gui-test\obj\Debug\gui-test.exe
+C:\Users\hummusbird\source\repos\gui-test\gui-test\obj\Debug\gui-test.pdb
