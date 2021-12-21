@@ -31,12 +31,12 @@ namespace gui_test
             var bg = _bg;
             var fg = _fg;
 
-            if (pos.X > _x -1 && pos.X < _x + _text.Length + 4 && pos.Y > _y - 1 && pos.Y < _y + 3)
+            if (pos.X > _x -1 && pos.X < _x + _text.Length + 4 && pos.Y > _y - 1 && pos.Y < _y + 3) // if mouseover
             {
                 bg = _fg;
                 fg = _bg;
 
-                if (Mouse.MButton(Mouse.MouseButton.Left))
+                if (Mouse.MDown(Mouse.MouseButton.Left)) // if clicked
                 {
                     bg = _cg;
                 }

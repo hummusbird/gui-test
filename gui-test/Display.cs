@@ -57,14 +57,13 @@ namespace gui_test
 
     public static class Mouse
     {
-        static int _x, _y;
 
         [DllImport("user32.dll")]
         static extern bool GetCursorPos(out POINT lpPoint);
 
         [DllImport("user32.dll")]
         public static extern bool GetAsyncKeyState(int button);
-        public static bool MButton(MouseButton button)
+        public static bool MDown(MouseButton button)
         {
             return GetAsyncKeyState((int)button);
         }
