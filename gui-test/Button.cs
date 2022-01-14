@@ -8,11 +8,13 @@ namespace gui_test
 {
     class Button
     {
-        private string _text;
+        public string _text;
         private int _x, _y;
         private readonly ConsoleColor _bg;
         private readonly ConsoleColor _fg;
         private readonly ConsoleColor _cg;
+
+        public bool clicked = false;
 
         public Button(string text = "button", int x = 0, int y = 0, ConsoleColor bg = ConsoleColor.Black, ConsoleColor fg = ConsoleColor.Green, ConsoleColor cg = ConsoleColor.DarkGray)
         {
@@ -31,7 +33,9 @@ namespace gui_test
             var bg = _bg;
             var fg = _fg;
 
-            if (pos.X > _x -1 && pos.X < _x + _text.Length + 4 && pos.Y > _y - 1 && pos.Y < _y + 3) // if mouseover
+            bool mouseover = pos.X > _x - 1 && pos.X < _x + _text.Length + 4 && pos.Y > _y - 1 && pos.Y < _y + 3;
+
+            if (mouseover) // if mouseover
             {
                 bg = _fg;
                 fg = _bg;
@@ -41,6 +45,9 @@ namespace gui_test
                     bg = _cg;
                 }
             }
+
+            if (mouseover && Mouse.MDown(Mouse.MouseButton.Left)) { clicked = true; }
+            else { clicked = false; }
 
             string row = new string('─', _text.Length + 2);
 
