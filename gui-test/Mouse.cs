@@ -50,6 +50,10 @@ namespace gui_test
             {
                 winpoint.X /= 8;
                 winpoint.Y /= 16;
+
+                if (winpoint.X == Console.BufferWidth) { winpoint.X -= 1; }
+                if (winpoint.Y == (rect.Bottom - rect.Top - 39) / 16) { winpoint.Y -= 1; }
+                
             }
             return winpoint;
         }

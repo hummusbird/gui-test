@@ -14,6 +14,7 @@ namespace gui_test
         private readonly ConsoleColor _fg;
         private readonly ConsoleColor _cg;
 
+
         public Button(string text = "button", int x = 0, int y = 0, ConsoleColor bg = ConsoleColor.Black, ConsoleColor fg = ConsoleColor.Green, ConsoleColor cg = ConsoleColor.DarkGray)
         {
             _text = text;

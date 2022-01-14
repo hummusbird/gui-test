@@ -24,17 +24,13 @@ namespace gui_test
             while (i)
             {
 
-                //button1.Draw();
-                //button2.Draw();
-                //button3.Draw();
+                button1.Draw();
+                button2.Draw();
+                button3.Draw();
 
-                if (Mouse.MDown(Mouse.MouseButton.Left))
-                {
-                    Console.SetCursorPosition(Window.GetMousePosition().X, Window.GetMousePosition().Y);
-                    Console.Write("X");
 
-                }
-                //Console.WriteLine("PX: "+ Window.GetMousePosition(false).X + "," + Window.GetMousePosition(false).Y + "  \tROW: " + Window.GetMousePosition().X + "," + Window.GetMousePosition().Y);
+                Console.SetCursorPosition(0, ((Window.GetPosition().Bottom - Window.GetPosition().Top - 39) / 16 ) -1);
+                Console.Write("PX: "+ Window.GetMousePosition(false).X + "," + Window.GetMousePosition(false).Y + "  \tROW: " + Window.GetMousePosition().X + "," + Window.GetMousePosition().Y + "   ");
             }
 
             Console.ReadKey();
